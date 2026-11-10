@@ -1,4 +1,7 @@
 package fr.simplon.domedespuys.services.interfaces;
 
-public interface IOrderProductService {
+import fr.simplon.domedespuys.entities.OrderProduct;
+
+public interface IOrderProductService<Oder, OrderProductDTO> {
+    OrderProduct create(OrderProductDTO dto);
 }
