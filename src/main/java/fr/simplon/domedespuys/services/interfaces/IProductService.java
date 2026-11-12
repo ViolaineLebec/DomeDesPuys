@@ -9,4 +9,5 @@ public interface IProductService extends
         IGetItem<Product>,
         ICollection<Product>
 {
+    boolean delete(String id);
 }

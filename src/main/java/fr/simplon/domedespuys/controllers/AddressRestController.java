@@ -20,4 +20,16 @@ public class AddressRestController {
     public Address createAddress(@RequestBody AddressDTO addressDTO) {
         return addressService.create(addressDTO);
     }
+
+    @PutMapping("/{id}")
+    @JsonView(AddressView.AddressDetailView.class)
+    public Address updateAddress(@PathVariable String id, @RequestBody AddressDTO dto) {
+        return addressService.update(id, dto);
+    }
+
+    @DeleteMapping("/{id}")
+    @JsonView(AddressView.AddressDetailView.class)
+    public boolean delete(@PathVariable String id) {
+        return addressService.delete(id);
+    }
 }

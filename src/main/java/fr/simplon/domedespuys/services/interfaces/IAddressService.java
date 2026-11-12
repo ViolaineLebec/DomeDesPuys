@@ -8,4 +8,5 @@ public interface IAddressService extends
         IUpdate<Address, AddressDTO>,
         IDelete
 {
+    Address getById(String id);
 }
