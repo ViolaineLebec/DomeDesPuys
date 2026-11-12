@@ -1,7 +1,7 @@
 package fr.simplon.domedespuys.dto;
 
 public class OrderProductDTO {
-    int quantity;
-    int price;
-    Long idProduct;
+    public int quantity;
+    public Long price;
+    public String idProduct;
 }

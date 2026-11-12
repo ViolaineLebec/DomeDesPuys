@@ -6,6 +6,6 @@ import fr.simplon.domedespuys.entities.OrderProduct;
 import java.util.List;
 
 public class OrderPostDTO {
-    public Long addressId;
-    public OrderProductDTO orderProducts;
+    public String addressId;
+    public List<OrderProductDTO> orderProducts;
 }

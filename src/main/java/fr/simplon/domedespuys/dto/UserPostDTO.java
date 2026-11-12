@@ -4,6 +4,6 @@ public class UserPostDTO {
     public String firstname;
     public String lastname;
     public String email;
-    public String password
+    public String password;
 }
 

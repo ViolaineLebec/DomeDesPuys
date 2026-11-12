@@ -7,7 +7,7 @@ import java.util.List;
 public class ProductDTO {
     public String label;
     public String description;
-    public String price;
-    public Long brandId;
-    List<String> images;
+    public Long price;
+    public String brandId;
+    public List<ImageDTO> images;
 }
